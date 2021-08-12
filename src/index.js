@@ -14,4 +14,8 @@ function appendText(text) {
     document.body.appendChild(genFragment(text));
 }
 
-appendText(`<div>2 + 4 = ${2 + 4}<div>`);
+function genAddExample(a, b) {
+    return `<div>${a} + ${b} = ${a + b}<div>`
+}
+
+appendText(genAddExample(3,6));
